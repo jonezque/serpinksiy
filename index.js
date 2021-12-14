@@ -180,11 +180,9 @@ class SG {
     
     gl.bindBuffer(gl.ARRAY_BUFFER, cbuffer);
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(colors), gl.STATIC_DRAW);
-  gl.vertexAttribPointer(colorsAttr, 3, gl.FLOAT, false, 0, 0);
-  gl.enableVertexAttribArray(colorsAttr);
+    gl.vertexAttribPointer(colorsAttr, 3, gl.FLOAT, false, 0, 0);
+    gl.enableVertexAttribArray(colorsAttr);
 
-  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.colors), gl.STATIC_DRAW);
-  
 
     gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
